@@ -1,13 +1,13 @@
-let points = JSON.parse(fs.readFileSync('./points.json' , 'utf8')); //Jungle Server // Jungle Staff
+let points = JSON.parse(fs.readFileSync('./points.json' , 'utf8')); //Toxic Codes // n3k4a is one
  
  
-client.on('message', async message => {//Jungle Server // Jungle Staff
+client.on('message', async message => {//Toxic Codes // n3k4a is one
  
  
     if(message.channel.type !== 'text') return;
    
    
-    var command = message.content.toLowerCase().split(" ")[0];//Jungle Server // Jungle Staff
+    var command = message.content.toLowerCase().split(" ")[0];//Toxic Codes // n3k4a is one
     var args = message.content.toLowerCase().split(" ");
     var userM = message.guild.member(message.mentions.users.first() || message.guild.members.find(m => m.id == args[1]));
       const embed  = new Discord.RichEmbed()
@@ -127,8 +127,8 @@ if(command == prefix + 'points') {
             }
             }
             }
-      fs.writeFile("./points.json", JSON.stringify(points) ,(err) =>{//Jungle Server // Jungle Staff
+      fs.writeFile("./points.json", JSON.stringify(points) ,(err) =>{//Toxic Codes // n3k4a is one
           if (err) console.log(err.message);
-      });//Jungle Server // Jungle Server
+      });//Toxic Codes // n3k4a is one
  
-});//Jungle Server // Jungle Server
+});//Toxic Codes // n3k4a is one
